@@ -9,7 +9,13 @@ namespace Nimbus.Testing
     {
         public List<IBusEvent> BusEvents { get; }
 
-        public IDeadLetterQueues DeadLetterQueues => throw new NotImplementedException();
+        public IDeadLetterQueues DeadLetterQueues
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         public MessageBusStub()
         {
